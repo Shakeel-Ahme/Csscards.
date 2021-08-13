@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Cards Hover effect</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cardsbox {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+        .cards {
+            width: 250px;
+            height: 330px;
+            border-radius: 5px;
+            box-shadow: 4px 6px 6px rgba(0,0,0,.7);
+            color: white;
+            padding: 10px;
+            transition: 1s;
+            position: absolute;
+        }
+        .cards h1 {
+            font-size: 25px;
+            text-align: center;
+            margin-top: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .cards p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .cards a {
+            color: black;
+            text-decoration: none;
+            margin-top: 10rem;
+            border-radius: 5px;
+            background-color: rgb(234, 240, 247);
+            padding: 8px 35px;
+            font-size: 18px;
+            margin-left: 50px;
+        }
+        .card1 {
+            background-color: rgb(224, 60, 60);
+            top: 0px;
+            left: 100px;
+            z-index: 4;
+        }
+        .card2 {
+            background-color: royalblue;
+            top: 10px;
+            left: 85px;
+            z-index: 3;
+        }
+        .card2:hover {
+            left: -160px;
+            transition: 2s;
+        }
+        .card3 {
+            background-color: sandybrown;
+            top: 20px;
+            left: 70px;
+            z-index: 2;
+        }
+        .card3:hover {
+            left: -180px;
+            transition: 2s;
+        }
+        .card4 {
+            background-color: rgb(45, 201, 185);
+            top: 30px;
+            left: 55px;
+        }
+        .card4:hover {
+            left: -198px;
+            transition: 2s;
+        }
+    </style>
+    <div class="main">
+        <div class="cardsbox">
+            <div class="cards card1">
+                <h1>Card One</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mollis orci. Fusce id sodales 
+                    purus. Integer lectus leo, blandit quis sodales sit amet, commodo non lacus. Quisque egestas aliquet 
+                    euismod. This is css card effects. How are you? are you doing better now?</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="cards card2">
+                <h1>Card Two</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mollis orci. Fusce id sodales 
+                    purus. Integer lectus leo, blandit quis sodales sit amet, commodo non lacus. Quisque egestas aliquet 
+                    euismod.This is css card effects. How are you? are you doing better now?</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="cards card3">
+                <h1>Card Three</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mollis orci. Fusce id sodales 
+                    purus. Integer lectus leo, blandit quis sodales sit amet, commodo non lacus. Quisque egestas aliquet 
+                    euismod.This is css card effects. How are you? are you doing better now?</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="cards card4">
+                <h1>Card Four</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae mollis orci. Fusce id sodales
+                     purus. Integer lectus leo, blandit quis sodales sit amet, commodo non lacus. Quisque egestas aliquet
+                      euismod.This is css card effects. How are you? are you doing better now?</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
